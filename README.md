@@ -1,5 +1,14 @@
 # Breast Cancer Classification
 
+## Team
+```
+P.Reddy Harika
+Ch.Manasa
+A.Sasi Vardhani
+P.Bhagya Sri
+K.Uma Bharathi
+```
+
 ## Introduction
 Breast cancer is a significant global health concern, affecting millions of lives each year. Early detection plays a crucial role in improving patient outcomes and reducing mortality rates. In this context, we present a deep learning-based approach for breast cancer classification using featured dataset.
 
