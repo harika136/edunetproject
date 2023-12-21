@@ -1,4 +1,4 @@
-# Breast Cancer Classification
+## TSP Project
 
 ## Team
 ```
@@ -9,88 +9,118 @@ P.Bhagya Sri
 K.Uma Bharathi
 ```
 
-## Introduction
-Breast cancer is a significant global health concern, affecting millions of lives each year. Early detection plays a crucial role in improving patient outcomes and reducing mortality rates. In this context, we present a deep learning-based approach for breast cancer classification using featured dataset.
+# Breast Cancer Classification
 
-## Code Dependencies:
-Install required imported libraries in your runtime environment
-```
-numpy
-pandas
-matplotlib
-```
+This web application predicts the nature of breast tumors (benign or malignant) using machine learning. It provides a user-friendly interface for users to input tumor characteristics, generating real-time predictions and visualizing important features.
 
-## Execution
-To run the code, type
-```
-python B_Cancer_DL.py
-```
-## Objective
-The primary objectives of this project are as follows:
-1) Early Detection: Develop a deep neural network to accurately classify histopathological images as benign or malignant, enabling early detection of breast cancer.
-2) Automation: Provide an automated and efficient tool that can assist pathologists in diagnosing breast cancer, thereby reducing the time and effort required for manual analysis.
-3) Performance Evaluation: Implement metrics such as accuracy, precision, recall, and the confusion matrix to comprehensively evaluate the model's performance.
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Implementation and Usage](#implementation-and-usage)
+- [Contributing](#contributing)
+
+## Getting Started
+
+To get a copy of this project up and running on your local machine, follow these simple steps.
+
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- Python (version 3.x)
+- Pip (Python package installer)
+
+### Technologies Stack
+- Python
+- Flask
+- scikit-learn
+- HTML/CSS
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   https://github.com/harika136/edunetproject.git
+   ```
+
+2. Change into the project directory:
+
+   ```bash
+   cd edunetproject
+   ```
+
+3. Install the required Python packages:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Implementation and Usage
+
+1. Run the Flask application:
+
+   ```bash
+   python app.py
+   ```
+
+2. Open your web browser and go to [http://localhost:5000](http://localhost:5000).
+
+3. Enter the required input features, and the application will predict whether the tumor is benign or malignant.
+
+## Contributing
+
+If you would like to contribute to the project, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/new-feature`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature/new-feature`).
+5. Open a pull request.
+
+## File Structure
+
+![file structure m](https://github.com/harika136/edunetproject/assets/104025509/1276fa1a-818d-4826-bced-126488046879)
+
+
+## Features
+
+- **Prediction**: Obtain instant predictions on whether a tumor is benign or malignant.
+- **Probability**: View the probability associated with each prediction.
+- **Visualization**: Explore feature importance through dynamic charts.
 
 ## Dataset
-- The data is structured in CSV files, with "cancer_data.csv" containing feature values and "cancer_data_y.csv" containing corresponding labels.
-- Data preprocessing involves steps such as normalization and handling missing values to ensure the data is suitable for model training.
-- The dataset is split into training and testing sets, enabling the evaluation of the model's performance on unseen data.
-- Each sample in the dataset is labeled as either malignant (1) or benign (0), indicating the nature of the tumor.
 
-## Data Preprocessing
-- The code uses Pandas to read CSV files ("cancer_data.csv" and "cancer_data_y.csv") containing the features and labels, respectively.
-- Neural network parameters are initialized using the ‘initialize_parameters_deep’ function.
-- The forward propagation steps are implemented in the ‘L_model_forward’ function, which performs [LINEAR -> RELU]*(L-1) -> LINEAR -> SIGMOID operations.
-- The cost is computed using the ‘compute_cost’ function, which calculates the binary cross-entropy loss.
-- Backward propagation is implemented in the ‘L_model_backward’ function, which computes gradients for each layer.
-- The ‘update_params’ function updates the parameters using gradient descent.
-- The model is trained for a specified number of iterations, and the training and test accuracy, as well as other metrics, are printed.
+The model is trained on a breast cancer dataset, ensuring accurate predictions based on diverse diagnostic features.
 
-## Neural Network Architecture
-- I defined the architecture of neural network by the variable ‘dims’.
-- The input layer has 30 neurons (features), as indicated by dims[0].
-- There are two hidden layers with 50 and 20 neurons, respectively (specified by ‘dims[1]’ and ‘dims[2]’ ).
-- The output layer has 1 neuron, corresponding to binary classification (specified by ‘dims[3]’ ).
-- Input Layer: 30 neurons
-- Hidden Layer 1: 50 neurons (using ReLU activation)
-- Hidden Layer 2: 20 neurons (using ReLU activation)
-- Output Layer: 1 neuron (using Sigmoid activation)
+## Acknowledgments
 
-## dims = [30, 30, 20, 11, 1]
-dims = [30, 50, 20, 11, 1]
+This project aims to contribute to breast cancer diagnostics, providing a valuable tool for medical professionals and researchers. Feel free to explore and enhance the application for broader impact.
 
-![image](https://github.com/harika136/edunetproject/assets/104025509/15702502-088a-4364-95dd-8f584ce62ff8)
+## Terminal
 
-## Training, Testing and Confusion Matrix
-Accuracy on training set: 91.63%
+![terminal](https://github.com/harika136/edunetproject/assets/104025509/6df964b9-8585-42a5-b906-6d4d07fd6c37)
 
-On Train set:
-- True Positive:   153
-- True Negative:   230
-- False Negative:   23
-- False Positive:   12
-- True Positive Rate / Recall: 86.93%
-- Precision: 92.73%
-- False Positive Rate / Fallout: 4.96%
 
-Accuracy on test set: 91.28%
+## Output
 
-On Test set:
-- True Positive:   30
-- True Negative:   106
-- False Negative:   5
-- False Positive:   8
-- True Positive Rate / Recall: 85.71%
-- Precision: 78.95%
-- False Positive Rate / Fallout: 7.02%
+![Breast Cancer Classifier - Profile 1 - Microsoft​ Edge 21-12-2023 15_57_02](https://github.com/harika136/edunetproject/assets/104025509/65527fba-98ab-4d53-885c-bae96fdf7c7d)
 
-# Output
 
-![B_Cancer_DL py - Edunet - Visual Studio Code 20-12-2023 16_41_27](https://github.com/harika136/edunetproject/assets/104025509/c2a6be59-2220-4333-a555-b85d476ca30f)
+![Breast Cancer Classifier - Profile 1 - Microsoft​ Edge 21-12-2023 15_29_56](https://github.com/harika136/edunetproject/assets/104025509/2a7e4fd3-b1cf-43e0-bb95-9906d32e45b2)
 
-## Model Performance
 
-![lr](https://github.com/harika136/edunetproject/assets/104025509/b86298ff-4371-424b-b63b-c5942e9050e0)
+![Breast Cancer Classifier - Profile 1 - Microsoft​ Edge 21-12-2023 15_30_02](https://github.com/harika136/edunetproject/assets/104025509/0703c3b1-b166-427c-9031-282887812ebf)
+
+
+![Breast Cancer Prediction Result - Profile 1 - Microsoft​ Edge 21-12-2023 15_30_44](https://github.com/harika136/edunetproject/assets/104025509/b8e32b40-f6a3-44f8-8654-066d89ede5ee)
+
+
+![Breast Cancer Prediction Result - Profile 1 - Microsoft​ Edge 21-12-2023 15_30_57](https://github.com/harika136/edunetproject/assets/104025509/f9f99a1d-5993-498c-9edf-d19245e19b8c)
+
 
 ## Conclusion
-The project concludes with an analysis of the model's performance on both training and test datasets. Metrics such as accuracy, precision, recall, and the confusion matrix contribute to a comprehensive understanding of the model's effectiveness.
+
+In conclusion, the Breast Cancer Classification Web Application serves as an effective tool for predicting the nature of breast tumors, aiding in early diagnostics and treatment decisions. Leveraging machine learning, the application offers a user-friendly interface, providing real-time predictions and insightful visualizations.
